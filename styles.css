@@ -1,0 +1,131 @@
+:root {
+  --txt_color: #1c3108;
+  --nav_white: hsla(0, 0%, 100%);
+  --bg_green: #9fe870;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* box-sizing: border-box; */
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+/* nav */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--nav_white);
+  width: 100%;
+  font-size: 15px;
+  font-style: normal;
+  position: sticky;
+  top: 0;
+  color: rgb(22, 51, 0);
+  line-height: 24px;
+  height: 80px;
+}
+
+/* left element of nav */
+.nav-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-left img {
+  margin-right: 50px;
+}
+
+.btn {
+  text-align: center;
+  width: 100px;
+  height: 32px;
+  border: none;
+  border-radius: 25px;
+  color: var(--txt_color);
+  background-color: var(--nav_white);
+  font-weight: 600;
+  cursor: pointer;
+}
+.grn {
+  background-color: var(--bg_green);
+}
+
+/* right element of nav */
+.nav-right ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right li {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+.nav-right li img {
+  margin-right: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg_green);
+  height:89vh;
+}
+
+/* left container  */
+.left {
+  
+  color: var(--txt_color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 20px;
+  width: 40%;
+}
+.left h1 {
+  font-style: normal;
+  font-weight: 600px;
+  color: #163300;
+  font-size: 47px;
+  line-height: 57px;
+  margin-bottom: 24px;
+}
+
+.left .btn {
+  color: rgb(159, 232, 112);
+  background-color: #163300;
+  width: fit-content;
+margin: 36px 0 0;
+  padding: calc(12px - 1px) 24px;
+  display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+/* right container  */
+
+.right {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 32px;
+  color:#163300;
+  width: 404px;
+  height: 550px;
+  
+ 
+}
+
+.icon{
+  background-color: rgba(161, 161, 161, 0);
+  border-radius: 50%;
+  color: rgb(70, 69, 69);
+  
+}

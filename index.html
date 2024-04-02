@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/form.css" />
+    <title>wise: currency converter</title>
+  </head>
+  <body>
+    <!-- nav bar  -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <!-- <div class="logo"> -->
+        <img src="/logo.svg" alt="logo" />
+        <!-- </div> -->
+        <!-- <div class="btn-gp"> -->
+        <button class="btn grn">Personal</button>
+        <button class="btn">Bussiness</button>
+        <!-- </div> -->
+      </div>
+
+      <div class="nav-right">
+        <ul>
+          <li>Features</li>
+          <li>Price</li>
+          <li>Help</li>
+          <li>
+            <img
+              src="https://wise.com/web-art/assets/flags/in.svg "
+              alt="flag"
+              width="22px"
+            />EN
+          </li>
+          <li>Login</li>
+          <li><button class="btn grn">Register</button></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- main container -->
+    <div class="container">
+      <!-- left side side  -->
+      <div class="left">
+        <h1>Make your money move, fast</h1>
+        <p>
+          Send to 70+ countries, fast. Free from hidden fees and exchange rate
+          markups
+        </p>
+        <button class="btn">Learn how to send money</button>
+      </div>
+
+      <!-- right side  -->
+      <div class="right">
+        <div class="calculator">
+          <form>
+            <p class="lable">You send exactly</p>
+            <div class="display">
+              <div class="amount">
+                <input class="same" value="10000" type="text" />
+              </div>
+              <div class="dropdown">
+                <div class="from">
+                  <div class="select-container">
+                    <img src="https://wise.com/web-art/assets/flags/in.svg" />
+                    <select name="from"></select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="details">
+              <li>
+                <span class="s1"> <span class="icon">&nbsp; &nbsp;&nbsp;</span> 0 </span>
+                <span>Bank transfer fee</span>
+              </li>
+              <li>
+                <span class="s1"
+                  ><span class="icon">&nbsp;&nbsp;&nbsp;</span>
+                  <span class="fee">332.01 INR </span>
+                </span>
+
+                <span>Our fee</span>
+              </li>
+              <li>
+                <span class="s1"
+                  ><span class="icon">&#9866;&nbsp;</span
+                  ><span class="fees">332.01 INR </span></span
+                >
+                <span>Total fees</span>
+              </li>
+              <li>
+                <hr />
+              </li>
+              <li>
+                <span class="s1"
+                  ><span class="icon">= &nbsp;</span
+                  ><span id="rem">9,667.99 INR </span></span
+                >
+                <span> Total amount we will convert</span>
+              </li>
+
+              <li>
+                <span class="s1">
+                  <span class="icon">*&nbsp;&nbsp;</span> <u id="showRate"> 83.3639</u>
+                </span>
+                <span> <u> Guarenteed rate(24h)</u></span>
+              </li>
+            </ul>
+
+            <p class="lable">Recipient gets</p>
+            <div class="display">
+              <div class="msg same">1USD = 80INR</div>
+              <div class="dropdown">
+                <div class="to">
+                  <div class="select-container">
+                    <img src="https://wise.com/web-art/assets/flags/usd.svg" />
+                    <select name="to"></select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="lable">Should arrive <b> by Wednesday</b></p>
+          </form>
+          <button class="btn grn">Get started</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/code.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
